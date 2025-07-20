@@ -203,7 +203,7 @@ function DashboardPage({ user }) {
     );
 }
 
-/* ---------- 7. 主 App（路由守卫） ---------- */
+/* ---------- 7. 主 App ---------- */
 export default function App() {
     const [user, setUser] = useState(null);
     const [route, setRoute] = useState(ROUTES.LOGIN);
@@ -250,7 +250,7 @@ export default function App() {
                 </div>
             </aside>
 
-            {/* 主内容：始终水平居中 */}
+            {/* 主内容 */}
             <main className="flex-1 flex justify-center overflow-y-auto">
                 <div className="w-full max-w-6xl">
                     {route === ROUTES.DASHBOARD && <DashboardPage user={user} />}
